@@ -13,6 +13,9 @@ CREATE DATABASE IF NOT EXISTS nome_da_base_de_dados
 CHARACTER SET utf8 
 COLLATE utf8_general_cli; 
 
+--Mostra tabelas em uma base de dados
+SHOW TABLES FROM nome_da_base_de_dados;
+
 
 CREATE  TABLE [IF NOT EXISTS] nome_da_base_de_dados.nome_da_tabela 
 (nome_do_campo1 tipo_do campo [parametros opcionais], --usar virgula para separar os campos, os nomes dos campos podem conter números
