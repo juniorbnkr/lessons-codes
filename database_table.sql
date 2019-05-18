@@ -54,7 +54,7 @@ CREATE TABLE universidade.alunos (
     sobrenome TINYTEXT,
     cpf VARCHAR(14) NOT NULL,
     idade INT(3) NOT NULL,
-    data_nascimento DATETIME,
+    data_nascimento DATE,
     sexo ENUM("M","F"),
     ra INT(6) NOT NULL,
     peso FLOAT(3,2) NOT NULL,
