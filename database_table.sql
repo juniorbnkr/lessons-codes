@@ -66,4 +66,6 @@ CREATE TABLE universidade.alunos (
 )
 ENGINE = InnoDB;
 
+DESCRIBE universidade.alunos;
+
 DROP TABLE universidade.alunos;
