@@ -43,18 +43,18 @@ ENGINE = InnoDB -- o engine InnoDB deve ser usado como padrão, pois ele permite
 -- UNIQUE: Impede linhas com campos duplicados.
 
 
-CREATE DATABASE IF NOT EXISTS pucsp
+CREATE DATABASE IF NOT EXISTS universidade
 CHARACTER SET utf8
 COLLATE utf8_general_cli;
 
 
-CREATE TABLE pucsp.alunos (
+CREATE TABLE universidade.alunos (
     id INT NOT NULL AUTO_INCREMENT,
     nome TINYTEXT NOT NULL,
     sobrenome TINYTEXT,
     cpf VARCHAR(14) NOT NULL,
     idade INT(3) NOT NULL,
-    data_nascimento VARCHAR(10),
+    data_nascimento DATETIME,
     sexo ENUM("M","F"),
     ra INT(6) NOT NULL,
     peso FLOAT(3,2) NOT NULL,
@@ -65,3 +65,5 @@ CREATE TABLE pucsp.alunos (
     PRIMARY KEY (id)
 )
 ENGINE = InnoDB;
+
+DROP TABLE universidade.alunos;
