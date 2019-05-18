@@ -68,4 +68,11 @@ ENGINE = InnoDB;
 
 DESCRIBE universidade.alunos;
 
+SELECT 
+id,nome,sobrenome, idade 
+from universidade.alunos;
+
+SELECT * from universidade.alunos;
+
+
 DROP TABLE universidade.alunos;
