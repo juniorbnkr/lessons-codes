@@ -57,7 +57,7 @@ CREATE TABLE universidade.alunos (
     data_nascimento DATE,
     sexo ENUM("M","F"),
     ra INT(6) NOT NULL,
-    peso FLOAT(3,2) NOT NULL,
+    peso FLOAT(5,2) NOT NULL,
     nacionalidade VARCHAR(2) DEFAULT 'BR',
 
     UNIQUE (ra),
