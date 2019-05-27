@@ -8,8 +8,12 @@ VALUES
 
 
 UPDATE universidade.alunos
-SET cpf = 123.321.312-11, idade = 20
+SET cpf = "123.321.312-11", idade = 20
 WHERE id = 1; 
+
+UPDATE alunos
+SET idade = 20, peso = "60.10" 
+WHERE sexo = "M"; 
 
 -- Usar sempre a cláusula WHERE no DELETE, usar sem o where apaga todas as linhas da tabela, como no truncate.
 DELETE FROM universidade.alunos WHERE id = 2; 
