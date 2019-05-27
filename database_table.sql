@@ -76,3 +76,5 @@ SELECT * from universidade.alunos;
 
 
 DROP TABLE universidade.alunos;
+
+USE universidade;
