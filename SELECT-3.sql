@@ -4,6 +4,10 @@ GROUP BY nacionalidade;
 SELECT predio,COUNT(id),SUM(projetor) FROM salas
 GROUP BY predio;
 
+SELECT predio,andar,COUNT(id),SUM(projetor) FROM salas
+GROUP BY predio,andar;
+
+
 -- Diferença WHERE e HAVING:
 -- WHERE: filtra antes de agregar, não pode usar função de agregação
 -- HAVING: filtra depois de agregar, só pode usar função de agregação
