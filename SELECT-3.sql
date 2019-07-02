@@ -81,6 +81,6 @@ GROUP BY s.numero;
 SELECT s.numero,VARIANCE(a.idade) FROM alunos a
 INNER JOIN salas s ON s.id = a.sala
 GROUP BY s.numero
-ORDER BY s.numer DESC;
+ORDER BY s.numero DESC;
 
 
